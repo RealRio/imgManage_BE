@@ -30,6 +30,9 @@ var Image = sequelize.define('image', {
     },
     description: {
         type: DataTypes.STRING,
+    },
+    sort_index: {
+        type: DataTypes.INTEGER,
     }
 },
     {
@@ -49,10 +52,10 @@ var Image = sequelize.define('image', {
 (async () => {
     // 这里是代码
     await sequelize.sync({ alter: true });
-    const item = await Image.findAll();
-    for (let i of item) {
-        console.log(JSON.stringify(i))
-    }
+    // const item = await Image.findAll();
+    // for (let i of item) {
+    //     console.log(JSON.stringify(i))
+    // }
 })();
 
 module.exports = Image;

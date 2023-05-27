@@ -1,9 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import homePage from './views/homePage.vue'
 </script>
 
 <template>
-  <HelloWorld msg="You did it!" />
+  <homePage msg="You did it!" />
 </template>
 
 <style scoped>
